@@ -34,7 +34,7 @@ public class ProjectResource {
 	private List<String> markdowns;
 
 	
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin
 	@RequestMapping(value = "/listOfProjects/Angular", method = RequestMethod.GET, consumes = {
 			MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE }, produces = {
 					MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
