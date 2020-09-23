@@ -43,8 +43,8 @@ public class ProjectResource {
 		Project project = null;
 		int index = 0;
 		for (String name : names) {
-			LOGGER.info(name, descriptions.get(index), gitURLs.get(index), markdowns.get(index));
-			project = new Project(name, descriptions.get(index), gitURLs.get(index), markdowns.get(index));
+			LOGGER.info(name, descriptions.get(index), gitURLs.get(index), "");
+			project = new Project(name, descriptions.get(index), gitURLs.get(index), "");
 			index++;
 			projects.add(project);
 		}
